@@ -7,7 +7,7 @@ import { fetchContacts } from '../../services/Api';
 
 const Tweets = () => {
   const [users, setUsers] = useState([]);
-  const [page, setPage] = useState([]);
+  // const [page, setPage] = useState([]);
 
   useEffect(() => {
     fetchContacts(3).then(response => {
