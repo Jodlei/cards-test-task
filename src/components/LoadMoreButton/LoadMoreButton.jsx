@@ -1,11 +1,11 @@
+import { ButtonWrap, Button } from './LoadMoreButton.styled';
+
 export const LoadMoreButton = (loadMoreClikHandler, isLoading) => {
   return (
-    <ButtonWrapper>
-      <MainButton
-        title="Load more"
-        func={loadMoreClikHandler}
-        isLoading={isLoading}
-      />
-    </ButtonWrapper>
+    <ButtonWrap>
+      <Button onClick={loadMoreClikHandler} isLoading={isLoading}>
+        {isLoading ? 'Loading' : 'Load more'}
+      </Button>
+    </ButtonWrap>
   );
 };
